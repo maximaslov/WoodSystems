@@ -2,6 +2,7 @@
 
 const mobileMenuBtn = document.querySelector('.header__menu-mobile-btn');
 const mobileMenu = document.querySelector('.header__menu-mobile');
+const mobileMenuLine = document.querySelector('.header__menu-mobile-separator');
 
 mobileMenuBtn.addEventListener('click', onMobileMenuBtnClick);
 
@@ -12,3 +13,5 @@ function onMobileMenuBtnClick() {
         mobileMenuBtn.classList.toggle('active');
     }, 1)
 }
+
+mobileMenuLine.addEventListener('click', onMobileMenuBtnClick);

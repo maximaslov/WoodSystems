@@ -100,10 +100,10 @@ ul {
 }
 
 .header__menu-mobile-items li:nth-child(7){
-    margin-bottom: 58px;
+    margin-bottom: 46px;
 }
 
-.header__menu-mobile-items li:last-child{
+.header__menu-mobile-items li:last-child {
     margin-bottom: 12px;
 }
 
@@ -224,7 +224,7 @@ ul {
 .header__menu-mobile {
     z-index: -1;
 	position: absolute;
-    height: auto;
+    height: 372px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -244,6 +244,7 @@ ul {
 
 .header__menu-mobile.active {
 	transform: translateY(-43px);
+    height: 372px;
 	/* transform: translateX(0); */
 }
 
