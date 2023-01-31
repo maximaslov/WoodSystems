@@ -11,5 +11,4 @@ function onMobileMenuBtnClick() {
         mobileMenu.classList.toggle('active');
         mobileMenuBtn.classList.toggle('active');
     }, 1)
-    
 }

@@ -119,6 +119,23 @@ ul {
     z-index: -2;
 }
 
+.head-section-mobile {
+    position: absolute;
+    z-index: -2;
+}
+
+.main-image-mobile {
+    width: 100%;
+}
+
+.main-image-mobile img {
+    /* min-width: 100%;
+    width: 100%; */
+    width: 432px;
+    max-width: 100%;
+    margin-top: -59px;
+}
+
 .main-image {
     margin-top: -91px;
     max-width: 100%;
@@ -137,6 +154,19 @@ ul {
     line-height: 110%;
     letter-spacing: 3.5px;
     font-size: 74px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.company-name-mobile {
+    color: white;
+    max-width: 276px;
+    width: 100%;
+    margin: -115.5% auto auto auto;
+    bottom: 0;
+    line-height: 110%;
+    letter-spacing: 3.5px;
+    font-size: 32px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
@@ -213,7 +243,7 @@ ul {
 }
 
 .header__menu-mobile.active {
-	transform: translateY(0);
+	transform: translateY(-43px);
 	/* transform: translateX(0); */
 }
 
@@ -274,6 +304,10 @@ ul {
     color: white;
 }
 
+.head-section-mobile {
+    display: none;
+}
+
 @media (max-width: 965px) {
     .header__menu-items {
         flex-wrap: wrap;
@@ -318,20 +352,38 @@ ul {
     .header__container {
         max-width: 90%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
+    .header__logo-image {
+        display: flex;
+        align-items: center;
+        margin-right: 2px;
+    }
+
     .header__logo-image img {
-        max-width: 38px;
+        max-width: 24px;
     }
 
     .header__separator {
         height: 28.6px;
+        margin-right: 0px;
+    }
+
+    .header__logo-text p {
+        font-size: 8px;
+    }
+
+    .header__logo-second-text {
+        font-size: 5px;
+        letter-spacing: 6.6px;
+        margin-left: 7px;
     }
 
     .header {
         width: 100%;
-        height: 9vh;
+        height: 38px;
         border: none;
         background: none white;
         color: white;  
@@ -339,6 +391,7 @@ ul {
 
     .header__menu {
         max-width: 14px;
+        margin-top: 0;
     }
 
     .header__menu-items {
@@ -353,9 +406,11 @@ ul {
         font-size: 25px;
         max-width: 220px;
     }
-    
-    .main-image {
-        margin: 0 auto;
-        height: 805px;
+    .head-section {
+        display: none;
+    }
+
+    .head-section-mobile {
+        display: block;
     }
 }
