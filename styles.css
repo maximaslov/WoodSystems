@@ -94,6 +94,7 @@ ul {
     font-weight: 100;
 }
 
+
 .header__menu-mobile-items li:not(:first-child, :last-child, :nth-child(7)){
     margin-bottom: 19px;
 }
@@ -330,10 +331,10 @@ ul {
 
     .header {
         width: 100%;
-        border: none;
         height: 9vh;
-        background: none #FFFFFF;
-        color: #FFFFFF; 
+        border: none;
+        background: none white;
+        color: white;  
     }
 
     .header__menu {
