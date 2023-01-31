@@ -21,6 +21,7 @@ ul {
 .container {
     margin: 0 auto;
     max-width: 1728px;
+    padding: 0 10px;
     width: 100%;
     position: relative;
 }
@@ -115,17 +116,19 @@ ul {
 }
 
 .head-section {
-    position: absolute;
+    position: relative;
     z-index: -2;
 }
 
 .head-section-mobile {
-    position: absolute;
+    position: relative;
     z-index: -2;
+    display: none;
 }
 
 .main-image-mobile {
     width: 100%;
+    position: relative;
 }
 
 .main-image-mobile img {
@@ -134,36 +137,49 @@ ul {
     width: 432px;
     max-width: 100%;
     margin-top: -59px;
+    display: block;
 }
 
 .main-image {
     margin-top: -91px;
     max-width: 100%;
+    position: relative;
 }
 
 .main-image img {
     max-width: 100%;
+    display: block;
 }
 
 .company-name {
     color: white;
     max-width: 599px;
     width: 100%;
-    margin: -35.7% auto auto auto;
-    bottom: 0;
     line-height: 110%;
     letter-spacing: 3.5px;
     font-size: 74px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0;
+    height: fit-content;
 }
 
 .company-name-mobile {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0;
+    height: fit-content;
     color: white;
     max-width: 276px;
     width: 100%;
-    margin: -115.5% auto auto auto;
-    bottom: 0;
     line-height: 110%;
     letter-spacing: 3.5px;
     font-size: 32px;
@@ -257,6 +273,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     color: white;
+    padding: 0 10px;
 }
 
 .header__link {
@@ -305,8 +322,84 @@ ul {
     color: white;
 }
 
-.head-section-mobile {
+.footer {
+    margin-top: 20px; /* временно */
+    background-color: white;
+    width: 100%;
+}
+
+.footer__container {
+    padding: 0 30px;
+    height: 287px;
+    max-width: 1397px;
+    width: 100%;
+    border-top: solid 1px #C9C9C9;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer__right-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__companyname {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer__menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__menu-items{
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__menu-item {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.footer__social-links {
+    width: 289px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link-item p {
     display: none;
+}
+
+@media (max-width: 900px) {
+    .footer__left-section {
+        flex-direction: column;
+    }
+    .footer__companyname {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 965px) {
@@ -337,14 +430,19 @@ ul {
     }
 }
 
+@media (max-width: 531px) {
+    .header__menu-item a {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 570px) {
     .header__menu-item {
         margin-right: 10px;
     }
 }
 
-@media (max-width: 432px) {
-
+@media (max-width: 464px) {
     .header__menu-mobile-btn {
         display: inline-block;
         max-width: 14px;
@@ -413,5 +511,43 @@ ul {
 
     .head-section-mobile {
         display: block;
+    }
+
+    .footer {
+        background-color: #C9C9C9;
+        border: none;
+    }
+
+    .footer__left-section {
+        width: 66.6%;
+        flex-direction: row;
+    }
+
+    .footer__right-section {
+        width: auto;
+        width: 33.4%;
+    }
+
+    .footer__companyname {
+        font-size: 13px;
+    }
+
+    .footer__menu-item {
+        font-size: 15px;
+    }
+
+    .footer__social-links {
+        flex-direction: column;
+        height: 165px;
+    }
+
+    .social-link-item img{
+        display: none;
+    }
+
+    .social-link-item p {
+        display: block;
+        font-size: 15px;
+        font-weight: 100;
     }
 }
