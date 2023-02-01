@@ -5,6 +5,7 @@ const mobileMenu = document.querySelector('.header__menu-mobile');
 const mobileMenuLine = document.querySelector('.header__menu-mobile-separator');
 
 mobileMenuBtn.addEventListener('click', onMobileMenuBtnClick);
+mobileMenuLine.addEventListener('click', onMobileMenuLineClick);
 
 function onMobileMenuBtnClick() {
     mobileMenu.style.display = 'block';
@@ -14,4 +15,6 @@ function onMobileMenuBtnClick() {
     }, 1)
 }
 
-mobileMenuLine.addEventListener('click', onMobileMenuBtnClick);
+function onMobileMenuLineClick () {
+    onMobileMenuBtnClick();
+}
