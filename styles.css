@@ -261,7 +261,7 @@ ul {
 .header__menu-mobile.active {
 	transform: translateY(-43px);
     height: 372px;
-    z-index: 0;
+    z-index: -1;
 	/* transform: translateX(0); */
 }
 
