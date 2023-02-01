@@ -37,7 +37,7 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
-    max-width: 1561px;
+    padding: 0 80px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -341,10 +341,6 @@ ul {
     color: white;
 }
 
-.description {
-    height: fit-content;
-}
-
 .separator {
     max-width: 1397px;
     width: 100%;
@@ -353,11 +349,16 @@ ul {
     margin: 0 auto;
 }
 
+.description {
+    height: fit-content;
+    margin-top: 116px;
+}
+
 .description__content {
-    padding: 116px 213px 159px 213px;
+    padding: 0px 213px 159px 213px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     height: fit-content;
     margin-bottom: 159px;
 }
@@ -384,13 +385,107 @@ ul {
 
 .description__text p {
     max-width: 770px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 100;
-    line-height: 130%;
+    line-height: 140%;
+}
+
+.description__text h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 24px;
 }
 
 .description__first-block {
     margin-bottom: 100px;
+}
+
+.promo {
+    height: fit-content;
+    margin-top: 116px;
+    margin-bottom: 159px;
+}
+
+.promo__content {
+    padding: 0px 213px 159px 213px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.promo__image {
+    width: 40%;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.promo__text {
+    width: 56.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promo__title {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 67px;
+    text-align: center;
+}
+
+.promo__subtitle {
+    max-width: 1116px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 auto 156px auto;
+    line-height: 140%;
+}
+
+.promo__text p {
+    max-width: 770px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 130%;
+}
+
+.promo__text h4 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 53px;
+}
+
+.promo__first-text {
+    margin-bottom: 80px;
+}
+
+.promo__link {
+    padding: 14px 0;
+    min-width: 169px;
+    text-align: center;
+    border: solid 1px black;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.promo__link:hover{
+    border: solid 3px black;
+    padding: 13px 0;
+}
+
+.promo__link:hover:active{
+    box-shadow: inset 2px 2px 5px rgb(0, 0, 0);
+}
+
+.promo__content.promo-reverse-block {
+    flex-direction: row-reverse;
+}
+
+.promo__content.promo-reverse-block .promo__image {
+    justify-content: flex-end;
 }
 
 .footer {
@@ -475,47 +570,45 @@ ul {
 
 
 @media (max-width: 1470px) {
-    .description {
-        padding: 116px 50px 159px 50px;
+    .header__container {
+        padding: 0 40px;
     }
-    .description__image {
+
+    .description__content {
+        padding: 116px 30px 159px 30px;
+    }
+
+    .promo__content {
+        padding: 116px 20px 159px 20px;
+    }
+
+    .description__image,  .promo__image {
         justify-content: center;
-    }
-    .description__tittle{
-        text-align: center;
     }
 }
 
-@media (max-width: 935px) {
-    .description {
-        padding: 116px 50px 30px 50px;
-    }
-    
-    .description__content {
+@media (max-width:1030px) {
+    .promo__content, .promo__content.promo-reverse-block {
         flex-direction: column;
+        align-items: center;
     }
 
-    .description__image {
+    .promo__image {
         width: 100%;
         margin-bottom: 45px;
     }
 
-    .description__image img {
-        max-width: 100%;
-    }
-
-    .description__text {
+    .promo__text {
+        align-items: center;
         width: 100%;
     }
-}
 
-@media (max-width: 900px) {
-    .footer__left-section {
-        flex-direction: column;
-        justify-content: center;
+    .promo__subtitle {
+        padding: 20px;
     }
-    .footer__companyname {
-        margin-bottom: 20px;
+
+    .promo.promo-last-block {
+        margin-bottom: 84px;
     }
 }
 
@@ -529,18 +622,61 @@ ul {
     }
 
     .header__menu-item {
-        margin-right: 30px;
+        margin-right: 20px;
     }
-
+    
     .company-name {
         font-size: 30px;
         max-width: 260px;
     }
+
+    .description__title  {
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 531px) {
+@media (max-width: 935px) {
+    .description__content {
+        padding: 116px 50px 30px 50px;
+        flex-direction: column;
+    }
+
+    .description__image, .promo__image {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .description__image img, .promo__image img {
+        max-width: 100%;
+    }
+
+    .description__text, .promo__text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__container {
+        padding: 0 20px;
+    }
+
+    .footer__left-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__companyname {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 537px) {
     .header__menu-item a {
         font-size: 16px;
+    }
+
+    .header__container {
+        padding: 0 10px;
     }
 }
 
@@ -625,12 +761,53 @@ ul {
         display: block;
     }
 
-    .description {
+    .description__content {
         padding: 30px 50px;
     }
 
-    .description__text p {
+    .promo {
+        margin-top: 42px;
+    }
+
+    .promo__content {
+        margin-bottom: 0;
+    }
+
+    .promo__subtitle {
+        padding: 0 50px;
+        margin: 0 auto 29px auto;
+    }
+
+    .promo__image {
+        margin-bottom: 23px;
+    }
+
+    .promo__text h4 {
+        margin-bottom: 20px;
+    }
+
+    .promo__first-text {
+        margin-bottom: 30px;
+    }
+
+    .separator {
+        max-width: 55%;
+    }
+
+    .description__text p, .promo__text p {
         font-size: 15px;
+    }
+
+    .content__title  {
+        font-size: 35%;
+        font-weight: 100;
+        margin: 0 auto;
+        margin-bottom: 160px;
+    }
+
+    .content__info {
+        display: flex;
+
     }
 
     .footer {
