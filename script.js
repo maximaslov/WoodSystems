@@ -1,6 +1,5 @@
 'use strict'
 
-const mainContainer = document.querySelector('.container');
 const body = document.getElementsByTagName('body')[0];
 const mobileMenuBtn = document.querySelector('.header__menu-mobile-btn');
 const mobileMenu = document.querySelector('.header__menu-mobile');
