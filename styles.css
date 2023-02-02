@@ -675,6 +675,10 @@ ul {
     .promo.promo-last-block {
         margin-bottom: 84px;
     }
+
+    .stylepage {
+        padding: 45px 45px 30px 45px;
+    }
 }
 
 @media (max-width: 965px) {
@@ -738,14 +742,13 @@ ul {
     }
 }
 
-
-@media (max-width: 537px) {
-    .header__menu-item a {
-        font-size: 16px;
+@media (max-width: 600px) {
+    .header__language-list.uk {
+        flex-direction: column;
     }
 
-    .header__container {
-        padding: 0 10px;
+    .header__language-list.uk .header__language-item .header__language-separator {
+        display: none;
     }
 }
 
@@ -756,6 +759,16 @@ ul {
 
     .promo__content {
         padding-top: 49px;
+    }
+}
+
+@media (max-width: 537px) {
+    .header__menu-item a {
+        font-size: 16px;
+    }
+
+    .header__container {
+        padding: 0 10px;
     }
 }
 
@@ -809,6 +822,10 @@ ul {
         color: white;  
     }
 
+    .header.header.header-light {
+        border: none;
+    }
+
     .header__menu {
         max-width: 14px;
         margin-top: 0;
@@ -830,6 +847,7 @@ ul {
         font-size: 25px;
         max-width: 220px;
     }
+
     .head-section {
         display: none;
     }
@@ -938,5 +956,30 @@ ul {
         display: block;
         font-size: 15px;
         font-weight: 100;
+    }
+
+    .stylepage__title {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 17px;
+    
+    }
+    
+    .stylepage__text {
+        font-size: 15px;
+        margin-bottom: 17px;
+    }
+
+    .stylepage__one-image {
+        margin-bottom: 28px;
+    }
+    
+    .stylepage__two-image {
+        margin: 0 auto 28px auto;
+    }
+    
+    .stylepage__two-image img:first-child {
+        margin-right: 25px;
     }
 }
