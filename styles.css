@@ -589,7 +589,7 @@ ul {
     padding: 79px 212px 124px 212px;
 }
 
-.stylepage__title {
+.document__title {
     font-size: 35px;
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
@@ -597,7 +597,7 @@ ul {
 
 }
 
-.stylepage__text {
+.document__text {
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 104px;
@@ -630,6 +630,31 @@ ul {
     margin-right: 25px;
 }
 
+.laboratory {
+    padding: 65px 212px 172px 212px;
+}
+
+.laboratory__first-img {
+    width: fit-content;
+    margin: 0 auto 65px auto;
+}
+
+.laboratory__first-img img {
+    width: 918px;
+    max-width: 100%;
+}
+
+.laboratory__image-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.laboratory__image-block img {
+    max-width: 378px;
+    width: 30%;
+}
+
 @media (max-width: 1470px) {
     .header__container {
         padding: 0 40px;
@@ -654,6 +679,7 @@ ul {
         align-items: center;
         padding-bottom: 0;
     }
+
     .promo__content.promo-reverse-block .promo__image {
         justify-content: center;
     }
@@ -677,6 +703,10 @@ ul {
     }
 
     .stylepage {
+        padding: 45px 45px 30px 45px;
+    }
+
+    .laboratory {
         padding: 45px 45px 30px 45px;
     }
 }
@@ -737,6 +767,7 @@ ul {
         flex-direction: column;
         justify-content: center;
     }
+
     .footer__companyname {
         margin-bottom: 20px;
     }
@@ -749,6 +780,19 @@ ul {
 
     .header__language-list.uk .header__language-item .header__language-separator {
         display: none;
+    }
+
+    .laboratory__image-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .laboratory__image-block img{
+        width: 100%;
+    }
+
+    .laboratory__image-block img:not(:last-child){
+        margin-bottom: 34px;
     }
 }
 
@@ -958,7 +1002,7 @@ ul {
         font-weight: 100;
     }
 
-    .stylepage__title {
+    .document__title {
         font-size: 25px;
         font-weight: 400;
         font-family: 'Raleway', sans-serif;
@@ -971,7 +1015,7 @@ ul {
         margin-bottom: 17px;
     }
 
-    .stylepage__one-image {
+    .document__one-image {
         margin-bottom: 28px;
     }
     
@@ -981,5 +1025,20 @@ ul {
     
     .stylepage__two-image img:first-child {
         margin-right: 25px;
+    }
+
+    .laboratory__title {
+        max-width: 213px;
+        text-align: center;
+        margin: 23px auto;
+    }
+
+    .document__text {
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+
+    .laboratory__first-img {
+        margin-bottom: 53px;
     }
 }

@@ -1,6 +1,7 @@
 'use strict'
 
 const body = document.getElementsByTagName('body')[0];
+const innovationBtn = document.querySelector('.innovations-btn')
 const mobileMenuBtn = document.querySelector('.header__menu-mobile-btn');
 const mobileMenu = document.querySelector('.header__menu-mobile');
 const mobileMenuLine = document.querySelector('.header__menu-mobile-separator');
