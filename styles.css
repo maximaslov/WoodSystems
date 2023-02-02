@@ -238,7 +238,7 @@ ul {
 }
 
 .header__menu-mobile {
-    z-index: -1;
+    z-index: 0;
 	position: absolute;
     height: 372px;
 	top: 0;
@@ -261,7 +261,7 @@ ul {
 .header__menu-mobile.active {
 	transform: translateY(-43px);
     height: 372px;
-    z-index: -1;
+    z-index: 0;
 	/* transform: translateX(0); */
 }
 
