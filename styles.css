@@ -593,6 +593,10 @@ ul {
     .promo__content, .promo__content.promo-reverse-block {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 0;
+    }
+    .promo__content.promo-reverse-block .promo__image {
+        justify-content: center;
     }
 
     .promo__image {
@@ -655,6 +659,10 @@ ul {
     .description__text, .promo__text {
         width: 100%;
     }
+
+    .promo {
+        margin-bottom: 42px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -685,6 +693,10 @@ ul {
 @media (max-width: 570px) {
     .header__menu-item {
         margin-right: 10px;
+    }
+
+    .promo__content {
+        padding-top: 49px;
     }
 }
 
