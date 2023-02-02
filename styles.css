@@ -26,6 +26,10 @@ ul {
     position: relative;
 }
 
+.container.noscroll {
+    overflow-y: hidden;
+}
+
 .header {
     position: relative;
     z-index: 3;
