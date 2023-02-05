@@ -12,7 +12,7 @@ const pressContainer = document.querySelector('.press');
 mobileMenuBtn.addEventListener('click', onMobileMenuBtnClick);
 mobileMenuLine.addEventListener('click', onMobileMenuLineClick);
 mobileMenu.addEventListener('touchend', onMobileMenuSwypeUp);
-pressContainer.addEventListener('click', onPressContainerClick);
+pressContainer?.addEventListener('click', onPressContainerClick);
 // pressImageEventListener();
 
 function onMobileMenuBtnClick() {
