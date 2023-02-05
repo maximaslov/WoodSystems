@@ -251,7 +251,7 @@ img {
 }
 
 .header__menu-mobile {
-    z-index: 0;
+    z-index: 2;
 	position: absolute;
     height: 372px;
 	top: 0;
@@ -271,9 +271,8 @@ img {
 }
 
 .header__menu-mobile.active {
-	/* transform: translateY(-43px); */
     height: 372px;
-    z-index: 0;
+    z-index: 2;
 	transform: translateY(-120%);
 	transition: transform 0.5s;
 }
@@ -1362,7 +1361,10 @@ img {
 
     .press__image.projects__image {
         max-width: 100%;
-        margin-bottom: 0;
+    }
+
+    .press__image.projects__image:not(:last-child) {
+        margin-bottom: 26px;
     }
 
     .projects h1 {
