@@ -1058,7 +1058,7 @@ input[type="file"] {
     }
 
     .press {
-        padding: 175px 150px 258px 150px;
+        padding: 84px 150px 258px 150px;
     }
 
     .projects {
@@ -1727,6 +1727,10 @@ input[type="file"] {
         padding: 27px 42px 70px 42px;
     }
 
+    .contacts__form label {
+        font-size: 15px;
+    }
+
     .contacts__title {
         font-size: 25px;
         margin-bottom: 28px;
@@ -1790,5 +1794,11 @@ input[type="file"] {
 
     .footer__menu-item.dark {
         color: black;
+    }
+
+    .press h1 {
+        font-size: 25px;
+        font-weight: 100;
+        margin-bottom: 25px;
     }
 }
