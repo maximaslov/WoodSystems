@@ -12,7 +12,12 @@
 a {
     text-decoration: none;
     color: black;
+    cursor: default;
 }
+
+input {
+    all: unset;
+  }
 
 ul {
     list-style: none;
@@ -64,6 +69,7 @@ img {
 
 .header__logo-image img{
     width: 100%;
+    max-width: 60px;
 }
 
 .header__separator {
@@ -585,6 +591,7 @@ img {
     justify-content: flex-start;
     font-size: 25px;
     font-weight: 600;
+    cursor: default;
 }
 
 .footer__menu {
@@ -607,10 +614,26 @@ img {
     font-weight: 100;
 }
 
+.footer__menu-item a {
+    cursor: default;
+}
+
+.footer__menu-item a:hover {
+    font-weight: 300;
+}
+
 .footer__social-links {
     width: 289px;
     display: flex;
     justify-content: space-between;
+}
+
+.social-link-item img:hover {
+    transform: scale(1.2);
+}
+
+.social-link-item {
+    cursor: default;
 }
 
 .social-link-item p {
@@ -794,7 +817,7 @@ img {
 
 .project__title {
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 75px;
 }
 
@@ -958,7 +981,6 @@ img {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-
     resize: none;
 }
 
