@@ -68,8 +68,7 @@ img {
 }
 
 .header__logo-image img{
-    width: 100%;
-    max-width: 60px;
+    width: 60px;
 }
 
 .header__separator {
@@ -984,7 +983,6 @@ img {
     resize: none;
 }
 
-
 input[type="file"] {
     opacity: 0;
 }
@@ -1006,6 +1004,57 @@ input[type="file"] {
     font-size: 15px;
     max-width: 134px;
     color: white;
+}
+
+.materials__desctop {
+    padding: 89px 212px 112px 212px;
+}
+
+.materials__mobile {
+    display: none;
+}
+
+.materials__block {
+    margin-bottom: 68px;
+}
+
+.materials__desctop:first-child .materials__block{
+    margin-bottom: 0;
+}
+
+.materials__title {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.materials__subtitle {
+    font-size: 20px;
+    line-height: 140%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.materials__text {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 140%;
+    margin-bottom: 68px;
+}
+
+.materials__images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    grid-template-rows: auto auto;
+    row-gap: 66px;
+}
+
+.materials__image img{
+    max-width: 100%;
 }
 
 @media (max-width: 1700px) {
@@ -1086,6 +1135,10 @@ input[type="file"] {
 
     .project__image_2 img{
         width: 90%;
+    }
+
+    .materials__desctop {
+        padding: 89px 80px 112px 80px;
     }
 }
 
@@ -1349,6 +1402,10 @@ input[type="file"] {
     .contacts__form button {
         align-self: center;
     }
+
+    .materials__desctop {
+        padding: 50px 50px 50px 50px;
+    }
 }
 
 @media (max-width: 835px) {
@@ -1396,6 +1453,38 @@ input[type="file"] {
 
     .laboratory__image-block img:not(:last-child){
         margin-bottom: 34px;
+    }
+
+    .materials__desctop {
+        display: none;
+    }
+
+    .materials__mobile {
+        display: block;
+        padding: 17px 35px 41px 35px;
+        flex-direction: column;
+    }
+
+    .materials__title {
+        font-size: 25px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    .materials__text {
+        font-size: 15px;
+        font-weight: 100;
+        margin-bottom: 68px;
+        text-align: center;
+    }
+
+    .materials__image-mobile {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .materials__image-mobile img {
+        width: 100%;
     }
 }
 
