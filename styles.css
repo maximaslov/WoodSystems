@@ -353,16 +353,14 @@ img {
 }
 
 .header__language:hover {
-    font-weight: 300;
+    transform: scale(1.1);
 }
-
-.header__language.light:hover {
-    font-weight: 300;
-    color: white;
+.header__language.active__language.light {
+    transform: scale(1);
 }
 
 .header__language.active__language:hover {
-    font-weight: 100;
+    transform: scale(1);
 }
 
 .header__language:first-child {
@@ -1686,6 +1684,7 @@ input[type="file"] {
     .footer {
         background-color: #C9C9C9;
         border: none;
+        margin-top: 0;
     }
 
     .footer__container {
