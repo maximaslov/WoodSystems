@@ -30,9 +30,9 @@ img {
 .container {
     margin: 0 auto;
     max-width: 1728px;
-    padding: 0 10px;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 .header {
@@ -961,9 +961,9 @@ img {
 }
 
 .contacts__inputs label {
-    position: absolute;
-    left: 95%;
-    top: 9%;
+    max-width: 20px;
+    align-self: flex-end;
+    padding: 7px 0px;
 }
 
 .contacts__inputs textarea {
@@ -983,6 +983,7 @@ img {
 
 input[type="file"] {
     opacity: 0;
+    cursor: pointer;
 }
 
 .contacts__file-input {
@@ -993,6 +994,7 @@ input[type="file"] {
     width: 100%;
     margin: 9px 9px 0 0;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .contacts__form button {
