@@ -17,7 +17,7 @@ a {
 
 input {
     all: unset;
-  }
+}
 
 ul {
     list-style: none;
@@ -114,11 +114,11 @@ img {
     font-weight: 100;
 }
 
-.header__menu-mobile-items li:not(:first-child, :last-child, :nth-child(7)){
+.header__menu-mobile-items li:not(:first-child, :last-child, :nth-child(8)){
     margin-bottom: 19px;
 }
 
-.header__menu-mobile-items li:nth-child(7){
+.header__menu-mobile-items li:nth-child(8){
     margin-bottom: 46px;
 }
 
@@ -258,7 +258,7 @@ img {
 .header__menu-mobile {
     z-index: 2;
 	position: absolute;
-    height: 372px;
+    height: 393px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -276,7 +276,7 @@ img {
 }
 
 .header__menu-mobile.active {
-    height: 372px;
+    height: 393px;
     z-index: 2;
 	transform: translateY(-120%);
 	transition: transform 0.5s;
@@ -339,6 +339,7 @@ img {
     display: flex;
     max-width: 102px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .header__language-item {
@@ -350,6 +351,15 @@ img {
     font-size: 20px;
     color: black;
     cursor: default;
+}
+
+.header__language-settings-mobile a {
+    font-size: 15px;
+}
+
+.header__language-settings-mobile .header__language-separator {
+    height: 15px;
+    margin-right: 0;
 }
 
 .header__language:hover {
@@ -1630,13 +1640,54 @@ input::file-selector-button  {
         transform: translateY(-43px);
     }
 
+    .header__menu-mobile-items:first-child {
+        margin-top: 65px;
+    }
+
+    .header__company-name {
+        margin-top: 0;
+    }
+
     .header__menu-items {
         display: none;
+    }
+
+    .header__language-item a {
+        margin-right: 5px;
+    }
+
+    .header__language:first-child {
+        margin-right: 5px;
+    }
+
+    .header__language-list {
+        width: 84px;
     }
 
     .header__language-settings {
         display: none;
     }
+
+    .header__language-item {
+        height: 15px;
+        align-items: center;
+    }
+
+    .header__language-settings-mobile.header__language-list {
+        height: 26px;
+    }
+    .header__language-settings-mobile.header__language-item {
+        display: flex;
+        align-items: center;
+    }
+
+    /* .header__menu-mobile-items li:not(:first-child, :last-child, :nth-child(8)) {
+        margin-bottom: 0;
+    }
+
+    .header__menu-mobile-items li:last-child {
+        margin-bottom: 0;
+    } */
 
     .company-name {
         font-size: 25px;
