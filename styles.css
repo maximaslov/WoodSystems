@@ -355,6 +355,7 @@ img {
 .header__language:hover {
     transform: scale(1.1);
 }
+
 .header__language.active__language.light {
     transform: scale(1);
 }
@@ -986,13 +987,17 @@ input[type="file"] {
     cursor: pointer;
 }
 
+input::file-selector-button  {
+    cursor: pointer;
+}
+
 .contacts__file-input {
     background-color: #181818;
     display: block;
     max-width: 30px;
     max-height: 30px;
     width: 100%;
-    margin: 9px 9px 0 0;
+    margin-top: -34px;
     align-self: flex-end;
     cursor: pointer;
 }
