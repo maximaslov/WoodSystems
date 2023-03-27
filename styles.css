@@ -28,8 +28,6 @@ img {
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1728px;
     width: 100%;
     position: relative;
     overflow-x: hidden;
@@ -49,11 +47,12 @@ img {
 }
 
 .header__container {
+    margin: 0 auto;
+    max-width: 1728px;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0 80px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -160,12 +159,14 @@ img {
 
 .main-image {
     margin-top: -91px;
-    max-width: 100%;
+    width: 100%;
     position: relative;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .main-image img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -208,7 +209,6 @@ img {
 .header__menu {
     max-width: 714px;
     width: 100%;
-    margin-top: 8px;
 }
 
 .header__menu-mobile-btn {
@@ -401,7 +401,14 @@ img {
     margin: 0 auto;
 }
 
+.separator.last {
+    max-width: 100vw;
+    width: 100%;
+}
+
 .description {
+    margin: 0 auto;
+    max-width: 1728px;
     height: fit-content;
     margin-top: 116px;
 }
@@ -448,6 +455,8 @@ img {
 }
 
 .promo {
+    margin: 0 auto;
+    max-width: 1728px;
     height: fit-content;
     margin-top: 116px;
 }
@@ -571,7 +580,6 @@ img {
 }
 
 .footer__separator {
-    max-width: 1397px;
     height: 1px;
     background-color: #C9C9C9;
     margin: 0 auto;
@@ -855,13 +863,15 @@ img {
 
 .contacts {
     display: block;
-    padding: 157px 205px 154px 205px;
     margin-top: -91px;
     background-color: #181818;
     color: white;
 }
 
 .contacts__container {
+    margin: 0 auto;
+    max-width: 1728px;
+    padding: 157px 205px 154px 205px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1019,6 +1029,14 @@ input::file-selector-button  {
     font-size: 15px;
     max-width: 134px;
     color: white;
+    transition: all 0.25s ease;
+}
+
+.contacts__form button:hover {
+    transition: all 0.25s ease;
+    color: #181818;
+    border: solid 1px #181818;
+    background-color: white;
 }
 
 .materials__desctop {
